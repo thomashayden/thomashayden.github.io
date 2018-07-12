@@ -1,1 +1,17 @@
-Hello World
+<script>
+function decide() {
+	document.getElementById("answer").textContent=document.getElementById("worse").value;
+}
+</script>
+<h1>Northeastern Housing Decision Predictor</h1>
+<h2><i>For when you just can't guess what housing will do</i></h2>
+<hr>
+<form>
+	The better option for your health/preference/literally any reason:<br>
+	<textarea id="better"></textarea><br>
+	The option that is worse for you in every conceivable way:<br>
+	<textarea id="worse"></textarea><br>
+	<input type="button" value="Let Housing Decide" onclick="decide();">
+</form>
+<h4>Housing's Answer:</h4>
+<div id="answer"><i>The option Northeastern Housing decides will show up here!</i></div>
